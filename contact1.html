@@ -1,0 +1,92 @@
+<html lang="en">
+    <head>
+        <title>Contact Me</title>
+        <meta charset="UTF-8">
+        <meta name="contact" content="width=device-width, initial-scale=1">
+        <style>
+            body{   
+                background-color:rgba(128, 128, 128, 0.144);
+            }
+            .container{
+                background-color: white;
+                position: relative;
+                text-align: center;
+                border: 1px solid whitesmoke;
+                box-shadow: 5px;
+                border-radius: 15px;
+                margin-left: 15%;
+                margin-top: 35px;
+                width: 65%;
+                height: 90%;
+            }
+            /* Top left text */
+            .top-left {
+                position: absolute;
+                top: 60px;
+                left: 9%;
+                font-family: 'tahoma','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+            }
+            /* Top right text */
+            .top-right {
+                position: absolute;
+                top: 0;
+                right: 0;  
+            }
+            .form-control{
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                margin-top: 10px;
+                width: 300px;
+                margin-bottom: 10px;
+                padding-block-end: 10px;
+                border-bottom: solid 2px grey;
+            }
+            img{
+                height: 550px;
+                width:450px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            .btn{
+                border-radius: 5px;
+                background-color: rgba(236, 213, 184, 0.842);
+                margin-top: 30px;
+                margin-left: 50%;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" style="">
+            <div class="top-left">
+                <section>
+                    <div>
+                        <h2>Contact Me</h2>
+                        <p>like to hear your opinion</p>
+                    </div>
+                    <form method="POST" id="contactForm" name="contactForm">
+                        <div>
+                            <input class="form-control" type="text" id="name" name="name" placeholder="Name">
+                        </div>
+                        <div>
+                            <input class="form-control" type="email" id="email" name="email" placeholder="E-mail">
+                        </div>
+                        <div >
+                            <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div>
+                            <textarea class="form-control" style="height: 60px;"  name="message" id="message" cols="30" row="10" placeholder="Create a message here"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Send Message" class="btn">
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="top-right">
+                <img src="images/2023-01-11 (6).png">
+            </div>
+        </div>
+    </body>
+</html>
